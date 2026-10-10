@@ -1,0 +1,6 @@
+{
+  "name": "VirtuLab AI — The Virtual Engineering Laboratory",
+  "description": "Interactive virtual electronics and electrical engineering lab with deterministic circuit simulation, mistake detection, Ollama/Gemma local AI mentor, and viva practice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

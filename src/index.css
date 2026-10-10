@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #070b14;
+    --panel-dark: #0d1527;
+    --card-dark: #111c34;
+    --border-dark: #1e2e4f;
+    --accent-cyan: #00f0ff;
+    --accent-blue: #2563eb;
+    --accent-amber: #f59e0b;
+    --accent-emerald: #10b981;
+    --accent-rose: #f43f5e;
+  }
+
+  body {
+    background-color: #070b14;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom engineering instrument grid */
+.circuit-grid {
+  background-image: 
+    radial-gradient(circle, rgba(0, 240, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px, 100px 100px, 100px 100px;
+}
+
+/* Current flow dash animation */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+.animate-current-flow {
+  animation: dash 1.5s linear infinite;
+}
+
+.animate-current-flow-reverse {
+  animation: dash 1.5s linear infinite reverse;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
